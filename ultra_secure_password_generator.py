@@ -50,7 +50,7 @@ class PasswordGeneratorApp:
             messagebox.showerror("Error", "Please enter a valid number for length.")
             return
 
-        # --- CRITERIA 1: Strength Validation ---
+        # CRITERIA 1: Strength Validation:
         selected_types = sum([self.uppercase_var.get(), self.lowercase_var.get(), 
                               self.digits_var.get(), self.symbols_var.get()])
 
@@ -73,7 +73,7 @@ class PasswordGeneratorApp:
 
         full_pool = "".join(char_map)
 
-        # --- CRITERIA 2: Uniqueness Logic ---
+        #CRITERIA 2: Uniqueness Logic:
         if self.unique_var.get() and length > len(full_pool):
             messagebox.showerror("Error", f"Pool only has {len(full_pool)} unique characters. Decrease length or disable 'Unique'.")
             return
