@@ -1,5 +1,6 @@
 # Password-Generator-Project
 It generates strong and unique passwords.
+
 User Input: Prompt the user to specify the desired length of the password.It must be greater than or equal to  12 characters.
 
 Ensure Uniqueness: User can select if she wants a unique password with no repetitions or not.
